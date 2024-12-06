@@ -35,7 +35,7 @@ final class WebPCodec: Codec {
     static func canDecode(data: Data) -> Bool {
         guard data.count >= DataHeader.length,
             data[0] == 0x52,
-            let header = String(bytes: data[0..<12], encoding: .ascii),
+            let header = String(bytes: data[0..<12], encoding: .isoLatin1),
             header.hasPrefix(DataHeader.prefix),
             header.hasSuffix(DataHeader.suffix) else {
                 return false
