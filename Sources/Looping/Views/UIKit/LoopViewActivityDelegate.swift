@@ -3,7 +3,7 @@ import Foundation
 import class UIKit.UIImage
 
 /// Respond to messages from the LoopView class to operations related to display and render.
-public protocol LoopViewActivityDelegate: class {
+public protocol LoopViewActivityDelegate: AnyObject {
 
     /// Called by the loop view when it renders a frame.
     /// - Parameters:

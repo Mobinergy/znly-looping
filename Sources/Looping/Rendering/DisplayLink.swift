@@ -3,7 +3,7 @@ import Foundation
 import class QuartzCore.CADisplayLink
 import func QuartzCore.CACurrentMediaTime
 
-private protocol Proxifiable: class {
+private protocol Proxifiable: AnyObject {
     func proxy()
 }
 

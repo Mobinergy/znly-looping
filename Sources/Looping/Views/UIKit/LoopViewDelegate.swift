@@ -1,7 +1,7 @@
 import Foundation
 
 /// Respond to messages from the LoopView class to operations related to image animations.
-public protocol LoopViewDelegate: class {
+public protocol LoopViewDelegate: AnyObject {
 
     /// Called by the loop view when the image animation started playing.
     /// - Parameters:
