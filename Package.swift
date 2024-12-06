@@ -17,7 +17,7 @@ let package = Package(
         .target(
             name: "WebP",
             path: "Sources/WebP/libwebp/",
-            sources: ["src"],
+            sources: ["src", "sharpyuv"],
             publicHeadersPath: "src/webp",
             cSettings: [.headerSearchPath(".")]
         )
